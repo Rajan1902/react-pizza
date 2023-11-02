@@ -7,7 +7,7 @@ import Cart from './features/cart/Cart';
 import Order, {loader as orderLoader} from './features/orders/Order';
 import CreateOrder, {action as createOrderAction} from './features/orders/CreateOrder';
 import AppLayout from "./UI/AppLayout";
-
+// import EmptyCart from './features/cart/EmptyCart';
 const router = createBrowserRouter([
   {
     element: <AppLayout></AppLayout>,
@@ -17,6 +17,10 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />
       },
+      // {
+      //   path: '/empty-cart',
+      //   element: <EmptyCart/>
+      // },
       {
         loader: menuLoader,
         path: '/menu',
