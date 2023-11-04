@@ -1,6 +1,7 @@
 
 import { Link, useNavigate } from 'react-router-dom'
 
+// eslint-disable-next-line react/prop-types
 const LinkButton = ({children, to}) => {
     const styles = 'text-sm text-blue-500 hover:text-blue-600';
     const navigate = useNavigate();
